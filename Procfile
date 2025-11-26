@@ -1,1 +1,1 @@
-web: gunicorn backend.sanare.wsgi:application
+web: gunicorn sanare.wsgi:application --chdir backend

@@ -1,1 +1,1 @@
-web: gunicorn sanare.wsgi
+web: gunicorn backend.wsgi

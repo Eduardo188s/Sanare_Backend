@@ -17,7 +17,7 @@ ALLOWED_HOSTS = ["sanarebackend-production.up.railway.app"]
 
 # CSRF
 CSRF_TRUSTED_ORIGINS = [
-    "https://sanare-theta.vercel.app",
+    "https://sanare-front.vercel.app",
 ]
 
 # REST Framework
@@ -59,7 +59,7 @@ MIDDLEWARE = [
 
 # CORS
 CORS_ALLOWED_ORIGINS = [
-    "https://sanare-theta.vercel.app",
+    "https://sanare-front.vercel.app",
 ]
 CORS_ALLOW_ALL_ORIGINS = False
 

@@ -5,9 +5,13 @@ from django.conf.urls.static import static
 from django.http import JsonResponse
 
 def backend_root(request):
-    return JsonResponse({"message": "Backend activo", "url": "https://sanarebackend-production.up.railway.app"})
+    return JsonResponse({
+        "message": "Backend activo",
+        "url": "https://sanarebackend-production.up.railway.app"
+    })
 
 urlpatterns = [
+    path('', backend_root),  # <-- este es el endpoint raíz
     path('admin/', admin.site.urls),
     path('api/auth/', include('accounts.urls')), 
     path('api/', include('citas.urls')),

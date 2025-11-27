@@ -2,6 +2,10 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import JsonResponse
+
+def backend_root(request):
+    return JsonResponse({"message": "Backend activo", "url": "https://sanarebackend-production.up.railway.app"})
 
 urlpatterns = [
     path('admin/', admin.site.urls),
